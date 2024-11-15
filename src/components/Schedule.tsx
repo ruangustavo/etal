@@ -21,103 +21,121 @@ interface Day {
 
 const schedule: Day[] = [
   {
-    date: '27/11/24',
-    dateTime: 'quarta',
+    date: '27/11',
+    dateTime: 'quarta-feira',
     summary:
-      'Credenciamento, Cerimônia de Abertura e Apresentação Cultural, Conferência de Abertura e Hackathon',
+      'Credenciamento, Cerimônia de Abertura, Conferência de Abertura e Hackathon',
     timeSlots: [
       {
         name: 'Credenciamento',
-        description: null,
-        start: '13:00',
-        end: '15:00',
-      },
-      {
-        name: 'Cerimônia de Abertura e Apresentação Cultural',
-        description: null,
-        start: '14:30',
-        end: '15:30',
-      },
-      {
-        name: 'Conferência de abertura e Hackathon: Premiação do desafio',
-        description: null,
-        start: '15:30',
-        end: '16:30',
-      },
-      {
-        name: 'Coquetel de Abertura e Apresentação Cultural',
-        description: null,
-        start: '16:30',
-        end: '18:00',
-      },
-    ],
-  },
-  {
-    date: '28/11/24',
-    dateTime: 'quinta',
-    summary:
-      'Minicursos, Competição de Jogos, Intervalo e Apresentação Cultural',
-    timeSlots: [
-      {
-        name: 'Minicursos',
-        description: null,
-        start: '07:00',
-        end: '12:00',
-      },
-      {
-        name: 'Competição de Jogos',
-        description: null,
+        description: 'Sala 003',
         start: '08:00',
         end: '11:00',
       },
       {
-        name: 'Intervalo e Apresentação Cultural',
-        description: null,
-        start: '09:00',
-        end: '10:00',
+        name: 'Credenciamento',
+        description: 'Sala 003',
+        start: '13:00',
+        end: '15:00',
+      },
+      {
+        name: 'Cerimônia de Abertura',
+        description: 'Apresentação Cultural - Auditório',
+        start: '14:00',
+        end: '15:00',
+      },
+      {
+        name: 'Conferência de Abertura',
+        description: 'Palestra - Solarz - Auditório',
+        start: '15:00',
+        end: '16:00',
+      },
+      {
+        name: 'Hackathon',
+        description: 'Avaliação e premiação dos desafios - Auditório',
+        start: '15:00',
+        end: '16:00',
       },
     ],
   },
   {
-    date: '29/12/24',
-    dateTime: 'sexta',
+    date: '28/11',
+    dateTime: 'quinta-feira',
     summary:
-      'Palestra, Intervalo e Apresentação Cultural, Mesa Redonda, Final da Competição de Jogos e Cerimônia de encerramento',
+      'Minicursos, E-sports, Apresentações Culturais, Palestra e Mesa Redonda',
+    timeSlots: [
+      {
+        name: 'Minicursos',
+        description: 'Lab. de Informática',
+        start: '08:00',
+        end: '12:00',
+      },
+      {
+        name: 'E-sports',
+        description: 'Campeonato de jogos - Lab. 60',
+        start: '08:00',
+        end: '12:00',
+      },
+      {
+        name: 'Apresentação Cultural',
+        description: 'Auditório',
+        start: '10:00',
+        end: '10:30',
+      },
+      {
+        name: 'Apresentação Cultural',
+        description: 'Auditório',
+        start: '13:30',
+        end: '14:00',
+      },
+      {
+        name: 'Palestra',
+        description: 'Computação na Física - Auditório',
+        start: '14:00',
+        end: '15:00',
+      },
+      {
+        name: 'Mesa Redonda',
+        description: 'Talentos extraordinários - Auditório',
+        start: '15:00',
+        end: '16:00',
+      },
+    ],
+  },
+  {
+    date: '29/11',
+    dateTime: 'sexta-feira',
+    summary: 'Palestras, E-sports Final e Cerimônia de Encerramento',
     timeSlots: [
       {
         name: 'Palestra',
-        description: null,
-        start: '07:00',
+        description: 'IA no Ensino - Auditório',
+        start: '08:00',
         end: '09:00',
       },
       {
-        name: 'Intervalo e Apresentação Cultural',
-        description: null,
+        name: 'Apresentação Cultural',
+        description: 'Auditório',
         start: '09:00',
         end: '09:30',
       },
       {
-        name: 'Mesa Redonda',
-        description: null,
+        name: 'Palestra',
+        description: 'Dados e IA - Auditório',
         start: '09:30',
-        end: '11:30',
+        end: '10:30',
       },
       {
-        name: 'Final da Competição de Jogos',
-        description: null,
+        name: 'E-sports - Final',
+        description: 'Campeonato de jogos - Lab. 60',
         start: '13:00',
         end: '15:30',
       },
       {
-        name: 'Cerimônia de encerramento e entrega de premiações',
-        description: null,
+        name: 'Cerimônia de Encerramento',
+        description:
+          'Entrega de premiações e Apresentação Cultural - Auditório',
         start: '15:30',
-        end: '16:30',
-      },
-      {
-        name: 'Apresentação Cultural',
-        description: null,
-        start: '16:30',
         end: '17:00',
       },
     ],

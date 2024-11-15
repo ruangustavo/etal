@@ -10,18 +10,18 @@ export function Hero() {
         <div className="mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
           <h1 className="font-display text-2xl font-bold tracking-tighter text-green-600 sm:text-3xl">
             <span className="sr-only">ETAL - </span> Encontro de Tecnologia do
-            Alto Oeste Potiguar
+            Alto Oeste Potiguar 2024
           </h1>
-          <div className="mt-6 space-y-6 font-display tracking-tight text-green-900 text-lg sm:text-2xl">
+          <div className="mt-6 space-y-6 font-display text-lg tracking-tight text-green-900 sm:text-2xl">
             <p>
-              Junte-se a nós de 27 a 29 de dezembro de 2024 para uma série de
+              Junte-se a nós de 27 a 29 de novembro de 2024 para uma série de
               eventos que celebram 15 anos de inovação, crescimento e avanços
               tecnológicos no IFRN.
             </p>
 
             <p>Explore nossa programação, que inclui:</p>
 
-            <ul className="list-disc pr-2">
+            <ul className="list-disc *:pl-4">
               <li>Minicursos imersivos em diferentes áreas</li>
               <li>Competição de jogos envolvente</li>
               <li>Apresentações e intervenções culturais estimulantes </li>
@@ -31,7 +31,7 @@ export function Hero() {
 
             <p>
               Não perca a oportunidade de se envolver, aprender e ser inspirado
-              pelas transformações que estão ocorrendo no IFRN. Inscreva-se 
+              pelas transformações que estão ocorrendo no IFRN. Inscreva-se
               agora e faça parte dessa celebração memorável.
               {/* Adicionar link para inscrição aqui */}
             </p>
@@ -42,7 +42,7 @@ export function Hero() {
           <dl className="mt-10 grid grid-cols-2 gap-x-10 gap-y-6 sm:mt-16 sm:gap-x-16 sm:gap-y-10 sm:text-center lg:auto-cols-auto lg:grid-flow-col lg:grid-cols-none lg:justify-start lg:text-left">
             {[
               ['Localização', 'Pau dos Ferros'],
-              ['Data', '27 a 29 de dezembro de 2024'],
+              ['Data', '27 a 29 de novembro de 2024'],
             ].map(([name, value]) => (
               <div key={name}>
                 <dt className="font-mono text-sm text-green-600">{name}</dt>

@@ -15,7 +15,7 @@ export function Header() {
             <p>
               {/* TODO: mudar data aqui */}
               <time dateTime="2024-11-27">27</time>-
-              <time dateTime="2024-12-30">29 de dezembro, 2024</time>
+              <time dateTime="2024-12-30">29 de novembro, 2024</time>
             </p>
             <DiamondIcon className="h-1.5 w-1.5 overflow-visible fill-current stroke-current" />
             <p>Pau dos Ferros, RN</p>

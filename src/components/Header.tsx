@@ -22,7 +22,12 @@ export function Header() {
           </div>
         </div>
         <div className="hidden sm:mt-10 sm:flex lg:mt-0 lg:grow lg:basis-0 lg:justify-end">
-          <Button href="#">Se inscrever</Button>
+          <Button
+            href="https://suap.ifrn.edu.br/eventos/inscricao/1/6613/"
+            target="_blank"
+          >
+            Se inscrever
+          </Button>
         </div>
       </Container>
     </header>

@@ -1,7 +1,6 @@
 import { Container } from '@/components/Container'
 import { Logo } from '@/components/Logo'
 import Image from 'next/image'
-import { Button } from './Button'
 
 export function Footer() {
   return (
@@ -16,7 +15,7 @@ export function Footer() {
           </p>
 
           <p className="text-slate-500">
-            Site desenvolvido por{' '}
+            Desenvolvido por{' '}
             <Image
               src="https://github.com/ruangustavo.png"
               alt="Imagem de Ruan Gustavo"

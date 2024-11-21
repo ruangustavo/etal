@@ -21,24 +21,32 @@ export function Hero() {
 
             <p>Explore nossa programação, que inclui:</p>
 
-            <ul className="list-disc *:pl-4">
-              <li>Minicursos imersivos em diferentes áreas</li>
-              <li>Competição de jogos envolvente</li>
-              <li>Apresentações e intervenções culturais estimulantes </li>
-              <li>Mesa redonda para discussão de tópicos relevantes</li>
-              <li>Cerimônia de abertura e encerramento com premiações</li>
+            <ul className="list-disc">
+              <li className="ml-4">Minicursos imersivos em diferentes áreas</li>
+              <li className="ml-4">Competição de jogos envolvente</li>
+              <li className="ml-4">
+                Apresentações e intervenções culturais estimulantes{' '}
+              </li>
+              <li className="ml-4">
+                Mesa redonda para discussão de tópicos relevantes
+              </li>
+              <li className="ml-4">
+                Cerimônia de abertura e encerramento com premiações
+              </li>
             </ul>
 
             <p>
               Não perca a oportunidade de se envolver, aprender e ser inspirado
               pelas transformações que estão ocorrendo no IFRN. Inscreva-se
               agora e faça parte dessa celebração memorável.
-              {/* Adicionar link para inscrição aqui */}
             </p>
+            <Button
+              href="https://suap.ifrn.edu.br/eventos/inscricao/1/6613/"
+              className="mt-10 w-full sm:hidden"
+            >
+              Se inscrever
+            </Button>
           </div>
-          <Button href="#" className="mt-10 w-full sm:hidden">
-            Se inscrever
-          </Button>
           <dl className="mt-10 grid grid-cols-2 gap-x-10 gap-y-6 sm:mt-16 sm:gap-x-16 sm:gap-y-10 sm:text-center lg:auto-cols-auto lg:grid-flow-col lg:grid-cols-none lg:justify-start lg:text-left">
             {[
               ['Localização', 'Pau dos Ferros'],

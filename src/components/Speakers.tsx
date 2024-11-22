@@ -74,7 +74,7 @@ export function Speakers({ title, description, days }: SpeakersProps) {
       aria-labelledby="speakers-title"
       className="py-20 sm:py-32"
     >
-      <ImageClipPaths id={id} />
+      <ImageClipPaths id={id} className="hidden sm:block" />
       <Container>
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2
@@ -142,30 +142,20 @@ export function Speakers({ title, description, days }: SpeakersProps) {
               >
                 {day.speakers.map((speaker, speakerIndex) => (
                   <div key={speakerIndex}>
-                    <div className="group relative h-[17.5rem] transform overflow-hidden rounded-4xl">
+                    <div className="group relative h-[17.5rem] overflow-hidden rounded-4xl">
                       <div
                         className={clsx(
-                          'absolute bottom-6 left-0 right-4 top-0 rounded-4xl border border-green-300 transition duration-300 group-hover:scale-95 xl:right-6',
+                          'absolute bottom-6 left-0 right-4 top-0 rounded-4xl transition duration-300 group-hover:scale-95 sm:border sm:border-green-300 xl:right-6',
                         )}
                       />
                       <div
-                        className="absolute inset-0 bg-green-50"
+                        className="absolute inset-0 bg-transparent lg:bg-green-50"
                         style={{ clipPath: `url(#${id}-${speakerIndex % 3})` }}
                       >
                         <Image
-                          className={clsx(
-                            'absolute inset-0 aspect-square size-full object-cover transition duration-300 group-hover:scale-110',
-                            speaker.name ===
-                              'Filipe de Carvalho Pinto Raulino' &&
-                              'object-top sm:object-left-top',
-                            speaker.name ===
-                              'Pablo Rodrigo Bernardino de Lira' &&
-                              'object-top sm:object-top',
-                            speaker.name === 'Caio Enzo Bessa de Oliveira' &&
-                              'object-top sm:object-left-top',
-                          )}
+                          className="absolute inset-0 mx-auto h-full w-fit rounded-4xl object-contain transition duration-300 group-hover:scale-110 sm:w-full sm:rounded-none"
                           src={speaker.image}
-                          alt=""
+                          alt={`${speaker.name} - ${speaker.role}`}
                           priority
                           sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw"
                         />

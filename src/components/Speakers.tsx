@@ -154,7 +154,7 @@ export function Speakers({ title, description, days }: SpeakersProps) {
                       >
                         <Image
                           className={clsx(
-                            'absolute inset-0 h-full w-full object-cover transition duration-300 group-hover:scale-110',
+                            'absolute inset-0 aspect-square size-full object-cover transition duration-300 group-hover:scale-110',
                             speaker.name ===
                               'Filipe de Carvalho Pinto Raulino' &&
                               'object-top sm:object-left-top',

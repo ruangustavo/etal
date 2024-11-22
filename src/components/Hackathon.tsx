@@ -11,6 +11,7 @@ import caioImage from '@/images/avatars/caio.jpeg'
 import filipeImage from '@/images/avatars/filipe.jpg'
 import pabloImage from '@/images/avatars/pablo.jpeg'
 import { Button } from './Button'
+import { PrizeItem } from './PrizeItem'
 
 interface Speaker {
   name: string
@@ -79,6 +80,12 @@ function ImageClipPaths({
 }
 
 export function Hackathon() {
+  const prizes = [
+    { position: 1, amount: 3000 },
+    { position: 2, amount: 2000 },
+    { position: 3, amount: 1000 },
+  ]
+
   return (
     <section
       id="hackathon"
@@ -94,18 +101,20 @@ export function Hackathon() {
             Hackathon
           </h2>
           <p className="mt-4 font-display text-2xl tracking-tight text-green-700">
-            Uma maratona para criar soluções
-            tecnológicas para problemas reais.
+            Uma maratona para criar soluções tecnológicas para problemas reais.
           </p>
           <p className="mt-4 font-display text-2xl tracking-tight text-green-900">
             Premiações:
           </p>
-            <ul>
-              <li>1º lugar: R$3000</li>
-              <li>2º lugar: R$2000</li>
-              <li>3º lugar: R$1000</li>
-            </ul>
-          
+          <ul className="mt-6 space-y-4">
+            {prizes.map((prize) => (
+              <PrizeItem
+                key={prize.position}
+                position={prize.position}
+                amount={prize.amount}
+              />
+            ))}
+          </ul>
         </div>
 
         <p className="mt-6 text-lg tracking-tight text-slate-800 sm:text-xl">
@@ -128,10 +137,10 @@ export function Hackathon() {
 
         <Button
           href="https://docs.google.com/forms/d/e/1FAIpQLSddOc6u0n4-Hkixie2DgOg2AG8djr5ExHS2Z6J2aynjb5s97A/viewform?fbzx=-595398554245114929"
-          className="mt-10 w-full bg-white border-2 border-green-600 text-green-600 hover:bg-green-200"
+          className="mt-10 w-full border-2 border-green-600 bg-white text-green-600 hover:bg-opacity-10"
           target="_blank"
         >
-          <span className='text-green-600 '>Inscrever equipe</span>
+          Inscrever equipe
         </Button>
       </Container>
     </section>

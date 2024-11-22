@@ -12,10 +12,12 @@ export function Header() {
         </div>
         <div className="order-first -mx-4 flex flex-auto basis-full overflow-x-auto whitespace-nowrap border-b border-green-600/10 py-4 font-mono text-sm text-green-600 sm:-mx-6 lg:order-none lg:mx-0 lg:basis-auto lg:border-0 lg:py-0">
           <div className="mx-auto flex items-center gap-4 px-4">
-            <p>
-              {/* TODO: mudar data aqui */}
-              <time dateTime="2024-11-27">27</time>-
-              <time dateTime="2024-12-30">29 de novembro, 2024</time>
+            <p className="sm:flex hidden">
+              <time dateTime="2024-11-27">27 a 29 de novembro de 2024</time>
+            </p>
+            <p className="flex sm:hidden">
+              <time dateTime="2024-11-27">27</time>- 
+              <time dateTime="2024-11-29">29/11/2024</time>
             </p>
             <DiamondIcon className="h-1.5 w-1.5 overflow-visible fill-current stroke-current" />
             <p>Pau dos Ferros, RN</p>

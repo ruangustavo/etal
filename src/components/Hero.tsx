@@ -12,6 +12,7 @@ export function Hero() {
             <span className="sr-only">ETAL - </span> Encontro de Tecnologia do
             Alto Oeste Potiguar 2024
           </h1>
+          <h2 className="mt-0.5 text-2xl font-semibold tracking-tight text-green-900">15 Anos de IFRN: Inovação, Crescimento e Tecnologias Impactando Vidas</h2>
           <div className="mt-6 space-y-6 font-display text-lg tracking-tight text-green-900 sm:text-2xl">
             <p>
               Junte-se a nós de 27 a 29 de novembro de 2024 para uma série de

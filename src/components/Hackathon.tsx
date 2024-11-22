@@ -93,10 +93,19 @@ export function Hackathon() {
           >
             Hackathon
           </h2>
-          <p className="mt-4 font-display text-2xl tracking-tight text-green-900">
-            A Hackathon é uma maratona de programação para criar soluções
+          <p className="mt-4 font-display text-2xl tracking-tight text-green-700">
+            Uma maratona para criar soluções
             tecnológicas para problemas reais.
           </p>
+          <p className="mt-4 font-display text-2xl tracking-tight text-green-900">
+            Premiações:
+          </p>
+            <ul>
+              <li>1º lugar: R$3000</li>
+              <li>2º lugar: R$2000</li>
+              <li>3º lugar: R$1000</li>
+            </ul>
+          
         </div>
 
         <p className="mt-6 text-lg tracking-tight text-slate-800 sm:text-xl">
@@ -119,10 +128,10 @@ export function Hackathon() {
 
         <Button
           href="https://docs.google.com/forms/d/e/1FAIpQLSddOc6u0n4-Hkixie2DgOg2AG8djr5ExHS2Z6J2aynjb5s97A/viewform?fbzx=-595398554245114929"
-          className="mt-10 w-full"
+          className="mt-10 w-full bg-white border-2 border-green-600 text-green-600 hover:bg-green-200"
           target="_blank"
         >
-          Inscreva-se
+          <span className='text-green-600 '>Inscrever equipe</span>
         </Button>
       </Container>
     </section>

@@ -274,7 +274,7 @@ function ScheduleStatic() {
 
 export function Schedule() {
   return (
-    <section id="schedule" aria-label="Schedule" className="py-20 sm:py-32">
+    <section id="schedule" aria-label="Schedule" className="py-6 sm:py-8">
       <Container className="relative z-10">
         {/* <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-4xl lg:pr-24">
           <h2 className="font-display text-4xl font-medium tracking-tighter text-green-600 sm:text-5xl">
@@ -287,8 +287,13 @@ export function Schedule() {
             to watch the talks.
           </p>
         </div> */}
+        <h2
+            className="font-display text-4xl font-medium tracking-tighter text-green-600 sm:text-5xl"
+          >
+            Programação
+          </h2>
       </Container>
-      <div className="relative mt-14 sm:mt-24">
+      <div className="relative mt-8 sm:mt-14">
         <BackgroundImage position="right" className="-bottom-32 -top-40" />
         <Container className="relative">
           <ScheduleTabbed />

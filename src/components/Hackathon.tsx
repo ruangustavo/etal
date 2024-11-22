@@ -126,13 +126,11 @@ export function Hackathon() {
           >
             SolarZ
           </a>
-          , os participantes terão a chance de explorar dados anonimizados sobre
-          900 mil usinas solares, com informações como localização, potência e
-          geração de energia desde 1999. Usando ferramentas de análise de dados
-          e inteligência artificial, o objetivo é identificar erros de cadastro,
-          estimar a geração futura, analisar a depreciação das usinas e avaliar
-          seu desempenho atual, visando melhorar a eficiência e a manutenção das
-          usinas solares.
+         , os participantes terão a oportunidade de resolver dois desafios focados na inovação no setor de energia solar. 
+
+Em um desafio, os times trabalharão com um conjunto de dados reais (anônimos), abrangendo cerca de 900 mil usinas solares. Esses dados incluem informações como localização, potência, especificações do fabricante e registros detalhados de geração diária desde 1999 até hoje. O objetivo é aplicar ferramentas de <b>análise de dados</b> e <b>inteligência artificial</b> para gerar insights que melhorem o controle e a manutenção das usinas.
+
+No outro desafio, as equipes participantes devem desenvolver soluções de segurança para proteger dados sensíveis armazenados, criando medidas que combinem eficácia e aplicabilidade para seus usuários. No contexto da <b>segurança de dados</b>, o objetivo desta vertente do desafio é encontrar falhas de segurança no serviço Solarz Monitoramento, especialmente focando em falhas do tipo Roubo de Identidade ou Execução Remota.
         </p>
 
         <Button

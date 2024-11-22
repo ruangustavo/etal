@@ -50,12 +50,12 @@ const schedule: Day[] = [
         start: '15:00',
         end: '16:00',
       },
-      {
+      /*{
         name: 'Hackathon',
         description: 'Avaliação e premiação dos desafios - Auditório',
         start: '15:00',
         end: '16:00',
-      },
+      },*/
     ],
   },
   {

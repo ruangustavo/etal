@@ -4,6 +4,7 @@ import { Newsletter } from '@/components/Newsletter'
 import { Schedule } from '@/components/Schedule'
 import { Day, Speakers } from '@/components/Speakers'
 import { Sponsors } from '@/components/Sponsors'
+import { Games } from '@/components/Games'
 
 import caioImage from '@/images/avatars/caio.jpeg'
 import filipeImage from '@/images/avatars/filipe.jpg'
@@ -116,7 +117,7 @@ export default function Home() {
         description="Conheça os profissionais que estarão conosco no evento"
         days={minicursosDays}
       />
-      
+      <Games />
       {/* <Sponsors /> */}
       {/* <Newsletter />  */}
     </>

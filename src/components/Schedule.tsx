@@ -21,122 +21,115 @@ interface Day {
 
 const schedule: Day[] = [
   {
-    date: '27/11',
+    date: '26/11',
     dateTime: 'quarta-feira',
-    summary:
-      'Credenciamento, Cerimônia de Abertura, Conferência de Abertura e Hackathon',
+    summary: 'Credenciamento, Competição de Jogos e Minicursos',
     timeSlots: [
       {
         name: 'Credenciamento',
-        description: 'Sala 003',
-        start: '08:00',
-        end: '11:00',
-      },
-      {
-        name: 'Credenciamento',
-        description: 'Sala 003',
+        description: '',
         start: '13:00',
         end: '15:00',
       },
       {
-        name: 'Cerimônia de Abertura',
-        description: 'Apresentação Cultural - Auditório',
-        start: '14:00',
+        name: 'Competição de Jogos',
+        description: '',
+        start: '13:00',
         end: '15:00',
       },
       {
-        name: 'Conferência de Abertura',
-        description: 'Palestra - Solarz - Auditório',
-        start: '15:00',
+        name: 'Minicursos',
+        description: '',
+        start: '13:00',
+        end: '18:00',
+      },
+    ],
+  },
+  {
+    date: '27/11',
+    dateTime: 'quinta-feira',
+    summary:
+      'Credenciamento, Competição de Jogos, Minicursos, Cerimônia de Abertura, Apresentação Cultural, Palestra e Mesa-Redonda',
+    timeSlots: [
+      {
+        name: 'Credenciamento',
+        description: '',
+        start: '08:00',
+        end: '12:00',
+      },
+      {
+        name: 'Competição de Jogos (Final)',
+        description: '',
+        start: '09:00',
+        end: '12:00',
+      },
+      {
+        name: 'Minicursos',
+        description: '',
+        start: '08:00',
+        end: '12:00',
+      },
+      {
+        name: 'Cerimônia de Abertura e Palestra',
+        description: '',
+        start: '14:00',
+        end: '15:30',
+      },
+      {
+        name: 'Intervalo e Apresentação Cultural',
+        description: '',
+        start: '15:30',
         end: '16:00',
       },
-      /*{
-        name: 'Hackathon',
-        description: 'Avaliação e premiação dos desafios - Auditório',
-        start: '15:00',
-        end: '16:00',
-      },*/
+      {
+        name: 'Mesa-Redonda',
+        description: '',
+        start: '16:00',
+        end: '18:00',
+      },
     ],
   },
   {
     date: '28/11',
-    dateTime: 'quinta-feira',
-    summary:
-      'Minicursos, E-sports, Apresentações Culturais, Palestra e Mesa Redonda',
-    timeSlots: [
-      {
-        name: 'Minicursos',
-        description: 'Lab. de Informática',
-        start: '08:00',
-        end: '12:00',
-      },
-      {
-        name: 'E-sports',
-        description: 'Campeonato de jogos - Lab. 60',
-        start: '08:00',
-        end: '12:00',
-      },
-      {
-        name: 'Apresentação Cultural',
-        description: 'Auditório',
-        start: '10:00',
-        end: '10:30',
-      },
-      {
-        name: 'Apresentação Cultural',
-        description: 'Auditório',
-        start: '13:30',
-        end: '14:00',
-      },
-      {
-        name: 'Palestra',
-        description: 'Computação na Física - Auditório',
-        start: '14:00',
-        end: '15:00',
-      },
-      {
-        name: 'Mesa Redonda',
-        description: 'Talentos extraordinários - Auditório',
-        start: '15:00',
-        end: '16:00',
-      },
-    ],
-  },
-  {
-    date: '29/11',
     dateTime: 'sexta-feira',
-    summary: 'Palestras, E-sports Final e Cerimônia de Encerramento',
+    summary:
+      'Palestras, Apresentações Culturais, Mesa-Redonda, Cerimônia de Encerramento e Entrega de Premiações',
     timeSlots: [
       {
         name: 'Palestra',
-        description: 'IA no Ensino - Auditório',
+        description: '',
         start: '08:00',
         end: '09:00',
       },
       {
-        name: 'Apresentação Cultural',
-        description: 'Auditório',
+        name: 'Intervalo e Apresentação Cultural',
+        description: '',
         start: '09:00',
         end: '09:30',
       },
       {
         name: 'Palestra',
-        description: 'Dados e IA - Auditório',
+        description: '',
         start: '09:30',
         end: '10:30',
       },
       {
-        name: 'E-sports - Final',
-        description: 'Campeonato de jogos - Lab. 60',
-        start: '13:00',
-        end: '15:30',
+        name: 'Mesa-Redonda',
+        description: '',
+        start: '10:30',
+        end: '12:00',
       },
       {
-        name: 'Cerimônia de Encerramento',
-        description:
-          'Entrega de premiações e Apresentação Cultural - Auditório',
-        start: '15:30',
-        end: '17:00',
+        name: 'Palestra',
+        description: '',
+        start: '14:00',
+        end: '15:00',
+      },
+      {
+        name: 'Apresentação Cultural e Cerimônia de Encerramento e Entrega de Premiações',
+        description: '',
+        start: '15:00',
+        end: '16:00',
       },
     ],
   },
@@ -212,7 +205,7 @@ function DaySummary({ day }: { day: Day }) {
       <h3 className="text-2xl font-semibold tracking-tight text-green-900">
         <time dateTime={day.dateTime}>{day.date}</time>
       </h3>
-      <p className="mt-1.5 text-base tracking-tight text-green-900">
+      <p className="mt-1.5 min-h-[72px] text-base tracking-tight text-green-900">
         {day.summary}
       </p>
     </>
@@ -287,11 +280,9 @@ export function Schedule() {
             to watch the talks.
           </p>
         </div> */}
-        <h2
-            className="font-display text-4xl font-medium tracking-tighter text-green-600 sm:text-5xl"
-          >
-            Programação
-          </h2>
+        <h2 className="font-display text-4xl font-medium tracking-tighter text-green-600 sm:text-5xl">
+          Programação
+        </h2>
       </Container>
       <div className="relative mt-8 sm:mt-14">
         <BackgroundImage position="right" className="-bottom-32 -top-40" />

@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     default: 'ETAL - Encontro de Tecnologia do Alto Oeste Potiguar',
   },
   description:
-    'Participe do ETAL 2024 - 15 Anos de IFRN: Inovação, Crescimento e Tecnologias Impactando Vidas. Programa com minicursos, competição de jogos, apresentações culturais e muito mais de 27 a 29 de novembro. Celebre 15 anos de transformação no IFRN.',
+    'Participe do ETAL 2025 - 15 Anos de IFRN: Inovação, Crescimento e Tecnologias Impactando Vidas. Programa com minicursos, competição de jogos, apresentações culturais e muito mais de 26 a 28 de novembro. Celebre 15 anos de transformação no IFRN.',
 }
 
 export default function RootLayout({

@@ -34,13 +34,13 @@ const schedule: Day[] = [
       {
         name: 'Competição de Jogos',
         description: '',
-        start: '13:00',
-        end: '15:00',
+        start: '14:00',
+        end: '18:00',
       },
       {
         name: 'Minicursos',
         description: '',
-        start: '13:00',
+        start: '14:00',
         end: '18:00',
       },
     ],
@@ -54,13 +54,13 @@ const schedule: Day[] = [
       {
         name: 'Credenciamento',
         description: '',
-        start: '08:00',
+        start: '07:00',
         end: '12:00',
       },
       {
         name: 'Competição de Jogos (Final)',
         description: '',
-        start: '09:00',
+        start: '08:00',
         end: '12:00',
       },
       {

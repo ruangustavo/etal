@@ -10,15 +10,13 @@ import caioImage from '@/images/avatars/caio.jpeg'
 import adryanImage from '@/images/avatars/adryan.jpg'
 import caiorafaelImage from '@/images/avatars/caiorafael.jpeg'
 import jonhyImage from '@/images/avatars/jonhy.jpeg'
+import anaImage from '@/images/avatars/ana.jpeg'
 import filipeImage from '@/images/avatars/filipe.jpg'
+import keyllyImage from '@/images/avatars/keylly.png'
+import rodolfoImage from '@/images/avatars/rodolfo.png'
 import pabloImage from '@/images/avatars/pablo.jpeg'
-import aluisioIgorImage from '@/images/avatars/aluisioigor.png'
-import isisOliveiraImage from '@/images/avatars/isisoliveira.png'
-import sabrinaAquino from '@/images/avatars/sabrinaaquino.jpeg'
-import talvacyChavesImage from '@/images/avatars/talvacychaves.jpeg'
-import thiagoLimaImage from '@/images/avatars/thiagolima.png'
-import marianaQueirozImage from '@/images/avatars/marianaqueiroz.png'
-import henriqueImage from '@/images/avatars/henrique.jpeg'
+import thiagoImage from '@/images/avatars/thiago.jpeg'
+import eliaquimImage from '@/images/avatars/eliaquim.jpeg'
 
 const minicursosDays: Day[] = [
   {
@@ -35,9 +33,9 @@ const minicursosDays: Day[] = [
       },
       {
         name: 'Caio Enzo Bessa de Oliveira - DEV',
-        role: 'Introdução ao desenvolvimento de jogos com Game Maker',
+        role: 'Desenvolvendo jogos com Game Maker',
         description:
-          'Aprenda conceitos básicos de game design, etapas do processo criativo no desenvolvimento de jogos, GML (Game Maker Language) e participe da criação de um game de navinha de forma coletiva.',
+          'Conheça as etapas da criação de um jogo e desenvolva o seu próprio protótipo com a engine Game Maker.',
         image: caioImage,
       },
       {
@@ -69,53 +67,49 @@ const palestrasDays: Day[] = [
   {
     name: 'Palestras',
     date: '27 a 28 de novembro',
-    dateTime: '28 de novembro',
+    dateTime: '',
     speakers: [
       {
-        name: 'Thiago Lima',
-        role: 'CEO da SolarZ',
-        description: 'Conferência de Abertura',
-        image: thiagoLimaImage,
-      },
-      {
-        name: 'Aluísio Igor Rêgo Fontes',
-        role: 'Coordenador do NADIC e professor',
-        description: 'Mesa redonda - Talentos extraordinários',
-        image: aluisioIgorImage,
-      },
-      {
-        name: 'Talvacy Chaves de Freitas',
-        role: 'Padre e professor',
+        name: 'Rodolfo Carneiro',
+        role: 'Professor e cientista de dados',
         description:
-          'A inteligência artificial (IA) no ensino superior: benefícios e dilema éticos na/para a pesquisa',
-        image: talvacyChavesImage,
+          'Palestra: Da transparência à IA generativa: o papel fundamental da governança de dados nessa jornada',
+        image: rodolfoImage,
       },
       {
-        name: 'Mariana Queiroz',
-        role: 'Engenheira de Dados',
+        name: 'Keylly Eyglys',
+        role: 'Professor e pesquisador em IA',
         description:
-          'Para além das telas: como Dados e IA redefinem o mundo real',
-        image: marianaQueirozImage,
+          'Palestra: Como a IA Está Transformando o Mundo das Imagens',
+        image: keyllyImage,
       },
       {
-        name: 'Isis Oliveira',
-        role: 'Engenheira de Dados',
+        name: 'Ana Alice',
+        role: 'Desenvolvedora',
         description:
-          'Para além das telas: como Dados e IA redefinem o mundo real',
-        image: isisOliveiraImage,
+          'Palestra: Workshop Seleção Internacional e Atualização em Linkeedin',
+        image: anaImage,
       },
       {
-        name: 'Sabrina Aquino',
-        role: 'Developer Advocate',
+        name: 'Thiago Henrique',
+        role: 'Professor, desenvolvedor e engenheiro de dados',
         description:
-          'Para além das telas: como Dados e IA redefinem o mundo real',
-        image: sabrinaAquino,
+          'Mesa-redonda: Impacto da IA na área de Computador e Sociedade',
+        image: thiagoImage,
       },
       {
-        name: 'Carlos Henrique Nascimento Cordeiro',
+        name: 'Eliaquim Timóteo',
         role: 'Professor',
-        description: 'Simulações Computacionais para Problemas de Física',
-        image: henriqueImage,
+        description:
+          'Mesa-redonda: Impacto da IA na área de Computador e Sociedade',
+        image: eliaquimImage,
+      },
+      {
+        name: 'Atson',
+        role: 'Professor',
+        description:
+          'Mesa-redonda: Impacto da IA na área de Computador e Sociedade',
+        image: eliaquimImage,
       },
     ],
   },

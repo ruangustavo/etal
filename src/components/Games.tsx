@@ -30,7 +30,7 @@ export function Games() {
       </Button>
       <div className="block">
         <h3 className="mt-8 text-3xl font-semibold tracking-tight text-green-900">
-          Mortal Kombat
+          Mortal Kombat 11
         </h3>
         <div className="mt-6 space-y-6 font-display text-lg tracking-tight text-green-900 sm:text-2xl">
           <p>
@@ -71,7 +71,7 @@ export function Games() {
           />
         </div> */}
         <h3 className="mt-8 border-t-2 pt-2 text-3xl font-semibold tracking-tight text-green-900">
-          FIFA
+          FIFA 2024
         </h3>
         <div className="mt-6 space-y-6 font-display text-lg tracking-tight text-green-900 sm:text-2xl">
           <p>
@@ -198,7 +198,7 @@ export function Games() {
           />
         </div> */}
         <h3 className="mt-8 border-t-2 pt-2 text-3xl font-semibold tracking-tight text-green-900">
-          Guitar Hero
+          Guitar Hero III
         </h3>
         <div className="mt-6 space-y-6 font-display text-lg tracking-tight text-green-900 sm:text-2xl">
           <p>

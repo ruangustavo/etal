@@ -1,6 +1,7 @@
 import { Container } from '@/components/Container'
 import { Logo } from '@/components/Logo'
 import Image from 'next/image'
+import lucasImage from '@/images/avatars/lucas.jpeg'
 
 export function Footer() {
   return (
@@ -29,6 +30,20 @@ export function Footer() {
               className="text-green-800 underline decoration-green-800 underline-offset-[6px]"
             >
               @ruangustavo
+            </a>
+            <Image
+              src={lucasImage}
+              alt="Imagem de Lucas Nunes"
+              className="mx-1 inline-block size-6 rounded-full"
+              width="42"
+              height="42"
+            />
+            <a
+              href="https://github.com/lucasnbs"
+              target="_blank"
+              className="text-green-800 underline decoration-green-800 underline-offset-[6px]"
+            >
+              @lucasnbs
             </a>
           </p>
         </div>

@@ -95,7 +95,7 @@ const palestrasDays: Day[] = [
       },
       {
         name: 'Walter Lopes',
-        role: 'Desenvolvedora',
+        role: 'Professor e Coordenador-Geral de Infraestrutura Tecnológica na Presidência da República',
         description:
           'Palestra: Transformação Digital Segura: O Papel da Inteligência artificial no mundo DevSecOps em Instituições Públicas.',
         image: walterImage,

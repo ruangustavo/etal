@@ -17,6 +17,9 @@ import rodolfoImage from '@/images/avatars/rodolfo.png'
 import pabloImage from '@/images/avatars/pablo.jpeg'
 import thiagoImage from '@/images/avatars/thiago.jpeg'
 import eliaquimImage from '@/images/avatars/eliaquim.jpeg'
+import atsonImage from '@/images/avatars/atson.jpg'
+import walterImage from '@/images/avatars/walter.png'
+import { Button } from '@/components/Button'
 
 const minicursosDays: Day[] = [
   {
@@ -91,6 +94,13 @@ const palestrasDays: Day[] = [
         image: anaImage,
       },
       {
+        name: 'Walter Lopes',
+        role: 'Desenvolvedora',
+        description:
+          'Palestra: Transformação Digital Segura: O Papel da Inteligência artificial no mundo DevSecOps em Instituições Públicas.',
+        image: walterImage,
+      },
+      {
         name: 'Thiago Henrique',
         role: 'Professor, desenvolvedor e engenheiro de dados',
         description:
@@ -105,11 +115,11 @@ const palestrasDays: Day[] = [
         image: eliaquimImage,
       },
       {
-        name: 'Atson',
+        name: 'Atson Santos',
         role: 'Professor',
         description:
           'Mesa-redonda: Impacto da IA na área de Computador e Sociedade',
-        image: eliaquimImage,
+        image: atsonImage,
       },
     ],
   },

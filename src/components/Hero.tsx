@@ -44,8 +44,8 @@ export function Hero() {
               agora e faça parte dessa celebração memorável.
             </p>
             <Button
-              href="https://suap.ifrn.edu.br/eventos/inscricao/1/6613/"
-              className="mt-10 w-full sm:hidden"
+              href="https://suap.ifrn.edu.br/eventos/inscricao/1/8528/"
+              className="mt-10"
             >
               Se inscrever
             </Button>

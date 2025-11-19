@@ -1,9 +1,11 @@
 import Image, { StaticImageData } from 'next/image'
 import { Container } from '@/components/Container'
 
-import mkt from '@/images/games/mkt.jpeg'
-import fifa from '@/images/games/fifa.jpeg'
-import valorant from '@/images/games/valorant.jpeg'
+import mkt from '@/images/games/mortalkombat.avif'
+import fifa from '@/images/games/fifa.jpg'
+import clash from '@/images/games/clash.avif'
+import guitar from '@/images/games/guitarhero.avif'
+import naruto from '@/images/games/naruto.webp'
 import { Button } from './Button'
 
 export function Games() {
@@ -22,7 +24,7 @@ export function Games() {
         </p>
       </div>
       <Button
-        className="mx-auto mt-8 block max-w-72 text-center"
+        className="b-2 mx-auto mt-8 block max-w-72 border-2 border-solid border-green-600 bg-transparent text-center text-green-600 hover:bg-green-600 hover:text-white"
         href="https://docs.google.com/forms/d/e/1FAIpQLSeNboz_l4uN8EUB3vBs0Oi1kgJb0O5t-LVQ6J-7mkwEezXcSA/viewform"
         target="_blank"
       >
@@ -60,16 +62,9 @@ export function Games() {
             30 segundos de descanso por round).
           </p>
         </div>
-
-        {/* <div className="rounded-lg bg-gray-950 p-2">
-          <Image
-            className=""
-            src={mkt}
-            alt={'tabela mortal kombat'}
-            priority
-            sizes=""
-          />
-        </div> */}
+        <div className="align-center mt-6 flex justify-center rounded-lg bg-emerald-400 p-2">
+          <Image className="w-full" src={mkt} alt={'tabela mortal kombat'} />
+        </div>
         <h3 className="mt-8 border-t-2 pt-2 text-3xl font-semibold tracking-tight text-green-900">
           FIFA 2024
         </h3>
@@ -102,7 +97,10 @@ export function Games() {
             tempo) e 6 minutos para troca de intervalo e ajustes.
           </p>
         </div>
-        {/* <div className="mt-6 rounded-lg bg-emerald-400 p-2">
+        <div className="align-center mt-6 flex justify-center rounded-lg bg-emerald-400 p-2">
+          <Image className="w-full" src={fifa} alt={'tabela fifa'} />
+        </div>
+        {/* <div className="relative mt-6 rounded-lg bg-emerald-400 p-2 flex justify-center align-center h-[200px]">
           <Image
             className=""
             src={fifa}
@@ -188,6 +186,9 @@ export function Games() {
             no tempo normal e 2 minutos adicionais em caso de morte súbita).
           </p>
         </div>
+        <div className="align-center mt-6 flex justify-center rounded-lg bg-emerald-400 p-2">
+          <Image className="w-full" src={clash} alt={'tabela clash royale'} />
+        </div>
         {/* <div className="mx-auto h-full w-fit rounded-lg bg-neutral-500 p-2">
           <Image
             className="self-center"
@@ -227,6 +228,47 @@ export function Games() {
             para preparação e escolha da música e o tempo da música que deve ter
             até 8 minutos).
           </p>
+        </div>
+        <div className="align-center mt-6 flex justify-center rounded-lg bg-emerald-400 p-2">
+          <Image className="w-full" src={guitar} alt={'tabela guitar hero'} />
+        </div>
+        <h3 className="mt-8 border-t-2 pt-2 text-3xl font-semibold tracking-tight text-green-900">
+          Naruto Ultimate Ninja Storm 4
+        </h3>
+        <div className="mt-6 space-y-6 font-display text-lg tracking-tight text-green-900 sm:text-2xl">
+          <p>
+            Para participar do campeonato, além da inscrição no ETAL, cada
+            competidor deve preencher um formulário específico para o
+            campeonato, informando o nome completo, matrícula e o nome que
+            deseja ser chamado durante o campeonato. Não será permitido o uso
+            dos personagens Kaguya, Madara Rikudou, Obito Rikudou, Naruto
+            Rikudou, Sasuke Rinne Sharingan, Guy Oito Portões e Toneri, bem como
+            o spam excessivo de projéteis e o uso de duas versões do mesmo
+            ninja.
+          </p>
+          <p>
+            Serão ofertadas apenas 16 vagas, logo, os primeiros 16 competidores
+            inscritos estarão dentro do torneio. Caso um competidor desista de
+            participar, o próximo a ter realizado a inscrição será o suplente.
+          </p>
+          <p>
+            O campeonato será realizado em duas fases, divididas em dois dias.
+          </p>
+          <p>
+            No primeiro dia ocorrerão as oitavas e quartas de final. Serão 12
+            partidas totais com até 8 minutos de jogo (2 minutos para
+            preparação, 3 rounds de 90 segundos e 30 segundos de descanso por
+            round).
+          </p>
+          <p>
+            No segundo dia ocorrerão as semifinais, finais e disputa de terceiro
+            lugar. Serão 4 partidas totais com até 12 minutos de jogo (2 minutos
+            para preparação, 5 rounds de 90 segundos e 30 segundos de descanso
+            por round).
+          </p>
+        </div>
+        <div className="align-center mt-6 flex justify-center rounded-lg bg-emerald-400 p-2">
+          <Image className="w-full" src={naruto} alt={'tabela naruto'} />
         </div>
       </div>
     </Container>

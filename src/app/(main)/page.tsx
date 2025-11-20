@@ -90,7 +90,7 @@ const palestrasDays: Day[] = [
         name: 'Ana Alice',
         role: 'Desenvolvedora',
         description:
-          'Palestra: Workshop Seleção Internacional e Atualização em Linkeedin',
+          'Palestra: Workshop Seleção Internacional e Atualização em Linkedin',
         image: anaImage,
       },
       {

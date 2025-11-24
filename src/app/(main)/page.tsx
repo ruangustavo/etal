@@ -10,7 +10,7 @@ import caioImage from '@/images/avatars/caio.jpeg'
 import adryanImage from '@/images/avatars/adryan.jpg'
 import caiorafaelImage from '@/images/avatars/caiorafael.jpeg'
 import jonhyImage from '@/images/avatars/jonhy.jpeg'
-import anaImage from '@/images/avatars/ana.jpeg'
+import romuloImage from '@/images/avatars/romulo.png'
 import filipeImage from '@/images/avatars/filipe.jpg'
 import keyllyImage from '@/images/avatars/keylly.png'
 import rodolfoImage from '@/images/avatars/rodolfo.png'
@@ -87,11 +87,11 @@ const palestrasDays: Day[] = [
         image: keyllyImage,
       },
       {
-        name: 'Ana Alice',
-        role: 'Desenvolvedora',
+        name: 'Francisco Rômulo',
+        role: 'Psicólogo Clínico',
         description:
-          'Palestra: Workshop Seleção Internacional e Atualização em Linkedin',
-        image: anaImage,
+          'Palestra: Saúde Mental na Era da IA: da Atenção Fragmentada ao Foco com Significado.',
+        image: romuloImage,
       },
       {
         name: 'Walter Lopes',

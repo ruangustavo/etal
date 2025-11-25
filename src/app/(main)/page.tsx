@@ -65,7 +65,7 @@ const minicursosDays: Day[] = [
       },
       {
         name: 'Antonio Marcos Fernandes de Queiroz - DEV',
-        role: 'Minicurso FastAPI — Construindo APIs Modernas e Performática',
+        role: 'Minicurso FastAPI — Construindo APIs Modernas e performáticas',
         description:
           'Este minicurso apresenta os principais conceitos e práticas para desenvolver APIs modernas utilizando o FastAPI. Você aprenderá desde a criação dos primeiros endpoints , validações, banco de dados, documentação automática e boas práticas para projetos profissionais.',
         image: antonioImage,

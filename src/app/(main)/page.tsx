@@ -11,7 +11,8 @@ import adryanImage from '@/images/avatars/adryan.jpg'
 import caiorafaelImage from '@/images/avatars/caiorafael.jpeg'
 import jonhyImage from '@/images/avatars/jonhy.jpeg'
 import romuloImage from '@/images/avatars/romulo.png'
-import filipeImage from '@/images/avatars/filipe.jpg'
+import antonioImage from '@/images/avatars/antonio.jpeg'
+import aluisioIgorImage from '@/images/avatars/aluisioigor.png'
 import keyllyImage from '@/images/avatars/keylly.png'
 import rodolfoImage from '@/images/avatars/rodolfo.png'
 import pabloImage from '@/images/avatars/pablo.jpeg'
@@ -61,6 +62,13 @@ const minicursosDays: Day[] = [
         description:
           'Este minicurso prático ensina a criar a interface de um aplicativo simples utilizando React Native e Expo. Vamos explorar os componentes fundamentais para estrutura (View), texto (Text) e imagens (Image), combinando teoria e prática para construir um pequeno cartão de perfil.',
         image: jonhyImage,
+      },
+      {
+        name: 'Antonio Marcos Fernandes de Queiroz - DEV',
+        role: 'Minicurso FastAPI — Construindo APIs Modernas e Performática',
+        description:
+          'Este minicurso apresenta os principais conceitos e práticas para desenvolver APIs modernas utilizando o FastAPI. Você aprenderá desde a criação dos primeiros endpoints , validações, banco de dados, documentação automática e boas práticas para projetos profissionais.',
+        image: antonioImage,
       },
     ],
   },
@@ -120,6 +128,12 @@ const palestrasDays: Day[] = [
         description:
           'Mesa-redonda: Impacto da IA na área de Computador e Sociedade',
         image: atsonImage,
+      },
+      {
+        name: 'Aluísio Igor Rêgo Fontes',
+        role: 'Coordenador do NADIC e professor',
+        description: 'Mesa-redonda: Alunos Egressos em Grandes Empresas',
+        image: aluisioIgorImage,
       },
     ],
   },

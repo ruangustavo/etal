@@ -20,6 +20,9 @@ import thiagoImage from '@/images/avatars/thiago.jpeg'
 import eliaquimImage from '@/images/avatars/eliaquim.jpeg'
 import atsonImage from '@/images/avatars/atson.jpg'
 import walterImage from '@/images/avatars/walter.png'
+import leadroImage from '@/images/avatars/Leandro.jpeg'
+import leonardoImage from '@/images/avatars/Leonardo.jpeg'
+import yasmimImage from '@/images/avatars/Yasmin.jpeg'
 import { Button } from '@/components/Button'
 
 const minicursosDays: Day[] = [
@@ -134,6 +137,24 @@ const palestrasDays: Day[] = [
         role: 'Coordenador do NADIC e professor',
         description: 'Mesa-redonda: Alunos Egressos em Grandes Empresas',
         image: aluisioIgorImage,
+      },
+      {
+        name: 'Leandro Morais',
+        role: 'Desenvolvedor back-end',
+        description: 'Mesa-redonda: Alunos Egressos em Grandes Empresas',
+        image: leadroImage,
+      },
+      {
+        name: 'Yasmin Carvalho',
+        role: 'Desenvolvedora fullstack',
+        description: 'Mesa-redonda: Alunos Egressos em Grandes Empresas',
+        image: yasmimImage,
+      },
+      {
+        name: 'Leonardo Natércio',
+        role: 'Desenvolvedor front-end',
+        description: 'Mesa-redonda: Alunos Egressos em Grandes Empresas',
+        image: leonardoImage,
       },
     ],
   },

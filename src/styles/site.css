@@ -2768,3 +2768,39 @@ a.cta--outline:hover .cta__dot {
     grid-column: 1;
   }
 }
+
+/* Minicourse illustrations: small screens made from the event's LED palette. */
+.course-art {
+  position: relative;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  min-height: 10rem;
+  overflow: hidden;
+  padding: 1rem 1.25rem;
+  background: var(--ink);
+  color: var(--lime);
+}
+.course-art::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.15;
+  background-image: radial-gradient(currentColor 1px, transparent 1px);
+  background-size: 12px 12px;
+  mask-image: linear-gradient(90deg, transparent, black);
+}
+.course-art__label { position: relative; max-width: 13ch; font-size: var(--t-s); }
+.course-art__drawing { position: relative; width: min(42%, 150px); height: auto; flex: none; }
+.course-art__pixels { position: absolute; top: 0.75rem; left: 1.25rem; letter-spacing: 0.2em; }
+.courses__registration {
+  display: inline-block;
+  width: fit-content;
+  margin-top: 1rem;
+  padding: 0.7rem 1rem;
+  background: var(--ink);
+  color: var(--lime);
+  font-weight: 700;
+  text-decoration: none;
+}
+.courses__registration:hover, .courses__registration:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }

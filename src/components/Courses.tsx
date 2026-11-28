@@ -1,5 +1,6 @@
 import Image from 'next/image';
-import { COURSES, coursePeriods, coursesInfo, dayById, type Course } from '@/data/site';
+import { CourseArt } from './CourseArt';
+import { COURSES, coursePeriods, coursesInfo, dayById, site, type Course } from '@/data/site';
 import { formatTime } from '@/data/time';
 
 function CourseSection({ title, text }: { title: string; text: string | null }) {
@@ -42,15 +43,19 @@ function CourseItem({ course, number }: { course: Course; number: number }) {
             <span className="course__meta">
               <span>{course.author}</span>
               <span className="course__room led">{course.room}</span>
-              <span className="course__seats">{course.vagas == null ? 'Vagas a confirmar' : `${course.vagas} vagas`}</span>
+              <span className="course__seats">{course.vagas == null ? 'Vagas a confirmar' : course.vagas === 0 ? 'Vagas ocupadas' : `${course.vagas} vagas restantes`}</span>
             </span>
           </span>
           <span className="course__sign" aria-hidden="true" />
         </summary>
         <div className="course__body">
           <div className="course__intro">
+            <CourseArt slug={course.slug} />
             <h4 className="course__label led">Sobre o minicurso</h4>
             <p>{course.detail?.trim() || 'Mais informações sobre este minicurso serão divulgadas em breve.'}</p>
+            {site.registration.status === 'open' && (
+              <a className="courses__registration" href={site.registration.url}>Consultar inscrição no SUAP ↗</a>
+            )}
           </div>
           <div className="course__info">
             <CourseSection title="Público-alvo" text={course.audience} />
@@ -76,6 +81,9 @@ export function Courses() {
         <div className="courses__guide">
           <p className="courses__when">{coursesInfo.when}</p>
           <p className="courses__how">{coursesInfo.how}</p>
+          {site.registration.status === 'open' && (
+            <a className="courses__registration" href={site.registration.url}>Inscreva-se no SUAP ↗</a>
+          )}
         </div>
       </div>
       {groups.map(({ period, courses }, g) => {

@@ -93,7 +93,7 @@ export type Game = {
 
 export type PastEdition = { year: number; label: string; note: string };
 
-const registration: Registration = { status: "open", url: "https://suap.ifrn.edu.br/eventos/inscricao/3/10301/" };
+const registration: Registration = { status: "open", url: "https://suap.ifrn.edu.br/eventos/inscricao/1/10301/" };
 
 export const site = {
   name: "ETAL 2026",
@@ -261,7 +261,7 @@ export const talks: Talk[] = [
 
 export const coursesInfo = {
   when: "Quinta, 3 de dezembro: sete minicursos de manhã e seis à tarde, cada um no seu laboratório ou sala.",
-  how: "A vaga no minicurso é escolhida na inscrição do evento, pelo SUAP. As turmas são pequenas e as vagas acabam por ordem de inscrição.",
+  how: "Escolha apenas um minicurso na inscrição pelo SUAP. As vagas restantes foram consultadas em 28/11 e podem mudar; confirme a disponibilidade no SUAP.",
 };
 
 export const coursePeriods: CoursePeriod[] = [
@@ -295,7 +295,7 @@ export const COURSES: Course[] = [
       "1. Entendendo os jogos de nave \n> 1.1 Origem\n> 1.2 Funcionamento\n> 1.3 Elementos do jogo\n> 1.4 Análise da estrutura\n\n2. Criação dos objetos\n> 2.1 Criação do jogador\n> 2.2 Criando o inimigo\n> 2.3 Criando o boss\n\n3. Criação do fluxo do jogo\n> 3.1 Implementando loop de gameplay\n> 3.2 Fazendo a montagem\n> 3.3 Criando o fluxo principal\n\n4. Polimento e publicação\n> 4.1 Polimento geral\n> 4.2 Compartilhamento\n> 4.3 Recebendo feedback e criando patches",
     author: "Caio Enzo Bessa de Oliveira",
     picture: "/participants/caio-enzo.jpeg",
-    vagas: 30,
+    vagas: 18,
     period: "manha",
     room: "Lab 56",
   },
@@ -313,7 +313,7 @@ export const COURSES: Course[] = [
       "1. Introdução ao System Design.\n2. Organização de sistemas: monolitos, monolitos modulares e microsserviços.\n3. Comunicação entre sistemas: REST, gRPC, mensageria e eventos.\n4. Distribuição de tráfego: proxies, load balancers, API Gateways e CDN.\n5. Resiliência e tolerância a falhas em sistemas distribuídos.\n6. Gerenciamento de dados: CAP, CQRS, Event Sourcing e sharding.\n7. Transações distribuídas e padrão Saga.\n8. Desafio prático: projetando um sistema para 1 milhão de usuários.",
     author: "João Manoel Fontes",
     picture: "/participants/joao-manoel.jpg",
-    vagas: null,
+    vagas: 0,
     period: "tarde",
     room: "Lab 60",
   },
@@ -329,7 +329,7 @@ export const COURSES: Course[] = [
       "Introdução as configurações básicas do projeto mobile e back.\nTestando o OpenCV.\nCriar um endpint com FastApi.\nExplorar o react native skia e react native gesture handler.\nConsumir o back.\n\nExtra(Se der tempo):\nDocker e TanStack Query.",
     author: "Adryan Eryk de Oliveira Leite",
     picture: "/participants/adryan-erik.JPG",
-    vagas: 40,
+    vagas: 10,
     period: "tarde",
     room: "Lab 65",
   },
@@ -346,7 +346,7 @@ export const COURSES: Course[] = [
       "Controle de versão: o que é e por que o Git virou padrão\nInstalação e configuração inicial (git config, identidade, branch padrão main, editor)\nConta no GitHub: criação, verificação em duas etapas e autenticação (SSH ou token)\nCiclo básico: init, status, add, commit, log, diff\n.gitignore e o que não deve ir para o repositório\nBranches: branch, switch, merge\nRepositórios remotos: clone, remote, fetch, pull, push\nDesfazendo erros: restore, revert, reset e stash\nFluxo de trabalho em equipe: issues, fork, pull request e code review\nConflitos de merge: por que acontecem e como resolver\nBoas práticas: mensagens de commit (Conventional Commits) e organização de branches\nPrática evolutiva em níveis, simulando situações reais de equipe\n",
     author: "Tallys Cesar Gurgel Batista",
     picture: "/participants/tallys-cesar.png",
-    vagas: null,
+    vagas: 9,
     period: "tarde",
     room: "Lab 58",
   },
@@ -363,7 +363,7 @@ export const COURSES: Course[] = [
       "- Introdução ao React: origem, funcionamento e estrutura de projetos.\n- Fundamentos: JSX, componentes, props, eventos e Hooks.\n- Contexto, custom Hooks e noções de performance.\n- Navegação com React Router.\n- Formulários com React Hook Form.\n- Integração com APIs utilizando Axios e TanStack Query.\n- Organização de código e boas práticas de desenvolvimento.\n- Introdução aos testes automatizados com Vitest e React Testing Library.\n",
     author: "Lucas Nunes",
     picture: "/participants/lucas-nunes.png",
-    vagas: null,
+    vagas: 23,
     period: "manha",
     room: "Lab 57",
   },
@@ -381,7 +381,7 @@ export const COURSES: Course[] = [
       "1 Estudo: visão geral do contexto, rodar o docker e ambiente locais. Estudaremos otimização de querys: planos de execução, EXPLAIN ANALYZE, Sequential Scan, Index Scan, criação de índices e problema de N+1.\n2 Estudo: Concorrência e integridade. Race conditions, propriedades ACID, transações, locks e deadlocks.\n3 Estudo: Confiabilidade e idempotência. Operações duplicadas, idempotency keys, constraints de unicidade e estratégias de retry.\n4 Estudo: Gerenciamento de conexões e escalabilidade. Monitoramento com pg_stat_activity, connection pooling, dimensionamento de conexões e introdução ao PgBouncer.",
     author: "Pedro Henrique Carvalho Sousa",
     picture: "/participants/pedro-henrique.jpeg",
-    vagas: null,
+    vagas: 19,
     period: "manha",
     room: "Lab 58",
   },
@@ -398,7 +398,7 @@ export const COURSES: Course[] = [
       "1.\tIntrodução ao Notion.\n2.\tConhecendo a interface e os recursos básicos.\n3.\tCriação de páginas e organização de informações.\n4.\tCriação de um sistema de gerenciamento de tarefas.\n5.\tUtilização de filtros e visualizações.\n6.\tProjeto Prático\n",
     author: "Klaywin Ryan Aquino Dias",
     picture: "/participants/klaywin-ryan.png",
-    vagas: null,
+    vagas: 24,
     period: "manha",
     room: "Sala",
   },
@@ -413,7 +413,7 @@ export const COURSES: Course[] = [
     content: null,
     author: "Pedro Heitor Rêgo Ferreira",
     picture: "/participants/pedro-heitor.jpg",
-    vagas: null,
+    vagas: 5,
     period: "manha",
     room: "Lab 65",
   },
@@ -428,7 +428,7 @@ export const COURSES: Course[] = [
     content: null,
     author: "Samuel Franklin de Oliveira Lopes",
     picture: "/participants/samuel-franklin.jpg",
-    vagas: null,
+    vagas: 9,
     period: "manha",
     room: "Lab 60",
   },
@@ -442,7 +442,7 @@ export const COURSES: Course[] = [
     content: null,
     author: "Hian Sebasthian Queiroz Silva",
     picture: null,
-    vagas: null,
+    vagas: 28,
     period: "manha",
     room: "Sala",
   },
@@ -456,7 +456,7 @@ export const COURSES: Course[] = [
     content: null,
     author: "Heitor Queiroga Duarte",
     picture: "/participants/heitor-queiroga.png",
-    vagas: null,
+    vagas: 28,
     period: "tarde",
     room: "Sala",
   },
@@ -472,7 +472,7 @@ export const COURSES: Course[] = [
       "- Introdução à IA e aos modelos generativos.\n- Chatbots, assistentes e agentes: diferenças e funcionamento.\n- Automação tradicional vs. agentes autônomos.\n- Arquitetura de um agente: modelo, instruções, ferramentas, memória e APIs.\n- Planejamento, tomada de decisão e execução de tarefas.\n- Conhecendo o OpenBot e suas possibilidades.\n- Configuração e criação de agentes inteligentes.\n- Integração com o WhatsApp: APIs, regras e boas práticas.\n- Na prática: agente de captação e qualificação de leads.\n- Segurança, limites de autonomia, supervisão humana e LGPD.",
     author: "Jilcimar da Silva Fernandes",
     picture: "/participants/jilcimar-fernandes.jpg",
-    vagas: null,
+    vagas: 16,
     period: "tarde",
     room: "Lab 57",
   },
@@ -489,7 +489,7 @@ export const COURSES: Course[] = [
       "1. Como funcionam os modelos de linguagem: tokens, contexto e por que eles erram.\n2. De chatbot a agente: ferramentas, ciclo de decisão e autonomia.\n3. O que muda na programação: impactos, limitações, riscos e expectativas do mercado.\n4. Agentes de programação na prática: planejar a tarefa e escrever boas instruções.\n5. Projeto prático: construir e modificar uma pequena aplicação web com um agente.\n6. Validação: revisar, testar e corrigir o código gerado.",
     author: "Kellyson Raphael",
     picture: "/participants/kellyson-raphael.jpg",
-    vagas: null,
+    vagas: 12,
     period: "tarde",
     room: "Lab 56",
   },

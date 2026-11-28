@@ -46,6 +46,7 @@ function CourseItem({ course, number }: { course: Course; number: number }) {
               <span className="course__seats">{course.vagas == null ? 'Vagas a confirmar' : course.vagas === 0 ? 'Vagas ocupadas' : `${course.vagas} vagas restantes`}</span>
             </span>
           </span>
+          <CourseArt slug={course.slug} compact />
           <span className="course__sign" aria-hidden="true" />
         </summary>
         <div className="course__body">

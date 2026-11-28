@@ -17,9 +17,17 @@ const art: Record<string, { label: string; drawing: ReactNode }> = {
   'agentes-de-ia': { label: 'IA / PROGRAMAÇÃO', drawing: <><path d="M30 40h116v80H30zM30 57h116" fill="none" stroke="currentColor" strokeWidth="4"/><path d="M48 70l-11 12 11 12 5-5-7-7 7-7zm28 0l11 12-11 12-5-5 7-7-7-7zM58 98l10-31h6L64 98zM105 69h8v8h-8zM120 84h8v8h-8zM101 99h8v8h-8z"/></> },
 };
 
-export function CourseArt({ slug }: { slug: string }) {
+export function CourseArt({ slug, compact = false }: { slug: string; compact?: boolean }) {
   const item = art[slug];
   if (!item) return null;
+
+  if (compact) {
+    return (
+      <span className="course-art-mini" aria-hidden="true">
+        <svg viewBox="0 0 176 160" fill="currentColor" focusable="false">{item.drawing}</svg>
+      </span>
+    );
+  }
 
   return (
     <div className="course-art" aria-hidden="true">

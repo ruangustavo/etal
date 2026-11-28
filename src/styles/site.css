@@ -1616,7 +1616,7 @@ a.cta--outline:hover .cta__dot {
 }
 .course__summary {
   display: grid;
-  grid-template-columns: 3.5rem 80px minmax(0, 1fr) 2.75rem;
+  grid-template-columns: 3.5rem 80px minmax(0, 1fr) 80px 2.75rem;
   align-items: center;
   gap: var(--gutter);
   padding: calc(var(--u) * 2.5) 1rem;
@@ -2793,6 +2793,25 @@ a.cta--outline:hover .cta__dot {
 .course-art__label { position: relative; max-width: 13ch; font-size: var(--t-s); }
 .course-art__drawing { position: relative; width: min(42%, 150px); height: auto; flex: none; }
 .course-art__pixels { position: absolute; top: 0.75rem; left: 1.25rem; letter-spacing: 0.2em; }
+.course-art-mini {
+  display: grid;
+  place-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  background: var(--ink);
+  color: var(--lime);
+}
+.course-art-mini svg { width: 90%; height: 90%; }
+@media (max-width: 767px) {
+  .course-art-mini {
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: end;
+    width: 48px;
+    height: 48px;
+  }
+}
 .courses__registration {
   display: inline-block;
   width: fit-content;

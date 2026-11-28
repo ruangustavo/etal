@@ -1,7 +1,7 @@
 import { dayById, esports, games, type Game, type GamePhase } from '@/data/site';
 
 const totalSeats = games.reduce((n, game) => n + game.seats, 0);
-const fullGames = games.filter((game) => game.full);
+const fullGames = games.filter((game) => game.pedidos >= game.seats);
 
 function PhaseDay({ phase, index }: { phase: GamePhase; index: number }) {
   if (!phase.day) {
@@ -23,7 +23,7 @@ function PhaseDay({ phase, index }: { phase: GamePhase; index: number }) {
 function GameItem({ game, number }: { game: Game; number: number }) {
   return (
     <li>
-      <details className={game.full ? 'game game--full' : 'game'}>
+      <details className={game.pedidos >= game.seats ? 'game game--full' : 'game'}>
         <summary className="game__summary">
           <span className="game__number led" aria-hidden="true">
             {String(number).padStart(2, '0')}
@@ -31,11 +31,12 @@ function GameItem({ game, number }: { game: Game; number: number }) {
           <span className="game__heading">
             <span className="game__name led">{game.name}</span>
             <span className="game__meta">
-              <span className="game__seats led">{game.full ? 'Esgotado' : `${game.seats} vagas`}</span>
+              <span className="game__seats led">{game.seats} vagas · {game.pedidos} pedidos</span>
               <span>
                 {game.mode} · {game.format}
               </span>
               <span>{game.days}</span>
+              <span>{game.pedidos >= game.seats ? 'Sem vagas estimadas' : `${game.seats - game.pedidos} vagas estimadas`}</span>
             </span>
           </span>
           <span className="game__sign" aria-hidden="true" />
@@ -71,10 +72,9 @@ function GameItem({ game, number }: { game: Game; number: number }) {
                 ))}
               </ul>
             </div>
-            {game.full ? (
+            {game.pedidos >= game.seats ? (
               <p className="game__full">
-                Todas as {game.seats} vagas já foram preenchidas. Se alguém desistir, a vaga vai para o próximo da lista
-                do formulário.
+                Os pedidos atingiram a capacidade. A disponibilidade depende da conferência das inscrições e dos horários.
               </p>
             ) : null}
           </div>
@@ -118,7 +118,7 @@ export function Esports() {
           {fullGames.length ? (
             <p className="esports__full">
               <span className="node" aria-hidden="true" />
-              {fullGames.map((game) => game.name).join(', ')}: vagas esgotadas
+              {fullGames.map((game) => game.name).join(', ')}: sem vagas estimadas
             </p>
           ) : null}
           <div className="esports__actions">
@@ -167,6 +167,7 @@ export function Esports() {
       </div>
 
       <h3 className="esports__list-title led">Os jogos e as regras</h3>
+      <p className="esports__source">Estimativa baseada nas respostas disponíveis em 28/11: conta a primeira e a segunda opção por matrícula, sem a reserva. Pedidos não são vagas confirmadas; a disponibilidade pode mudar após a conferência de horários e inscrições.</p>
       <ul className="games">
         {games.map((game, i) => (
           <GameItem key={game.slug} game={game} number={i + 1} />

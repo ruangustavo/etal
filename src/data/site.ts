@@ -82,6 +82,7 @@ export type Game = {
   name: string;
   seats: number;
   full?: true; // every seat taken
+  pedidos: number; // 1ª ou 2ª opção, por matrícula; reserva excluída
   mode: string;
   format: string;
   days: string;
@@ -261,7 +262,7 @@ export const talks: Talk[] = [
 
 export const coursesInfo = {
   when: "Quinta, 3 de dezembro: sete minicursos de manhã e seis à tarde, cada um no seu laboratório ou sala.",
-  how: "Escolha apenas um minicurso na inscrição pelo SUAP. As vagas restantes foram consultadas em 28/11 e podem mudar; confirme a disponibilidade no SUAP.",
+  how: "Escolha apenas um minicurso na inscrição pelo SUAP. As vagas são consultadas no SUAP e podem mudar; confirme a disponibilidade ao se inscrever.",
 };
 
 export const coursePeriods: CoursePeriod[] = [
@@ -528,6 +529,7 @@ export const esports = {
 export const games: Game[] = [
   {
     slug: "clash-royale",
+    pedidos: 15,
     name: "Clash Royale",
     seats: 32,
     mode: "1 × 1",
@@ -551,6 +553,7 @@ export const games: Game[] = [
   },
   {
     slug: "mortal-kombat",
+    pedidos: 18,
     name: "Mortal Kombat 1",
     seats: 16,
     mode: "1 × 1",
@@ -572,6 +575,7 @@ export const games: Game[] = [
   },
   {
     slug: "fifa",
+    pedidos: 32,
     name: "FIFA",
     seats: 16,
     full: true,
@@ -592,6 +596,7 @@ export const games: Game[] = [
   },
   {
     slug: "guitar-hero",
+    pedidos: 7,
     name: "Guitar Hero III",
     seats: 16,
     mode: "1 × 1",
@@ -618,6 +623,7 @@ export const games: Game[] = [
   },
   {
     slug: "mario-kart",
+    pedidos: 14,
     name: "Mario Kart 8 Deluxe",
     seats: 16,
     mode: "4 por corrida",
@@ -641,6 +647,7 @@ export const games: Game[] = [
   },
   {
     slug: "bomberman",
+    pedidos: 11,
     name: "Super Bomberman R",
     seats: 32,
     mode: "8 por partida",
@@ -667,6 +674,7 @@ export const games: Game[] = [
   },
   {
     slug: "smash",
+    pedidos: 4,
     name: "Super Smash Bros. Ultimate",
     seats: 8,
     mode: "Grupos e 1 × 1",

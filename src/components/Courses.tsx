@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { CourseArt } from './CourseArt';
+import { CourseSeats } from './CourseSeats';
 import { COURSES, coursePeriods, coursesInfo, dayById, site, type Course } from '@/data/site';
 import { formatTime } from '@/data/time';
 
@@ -43,7 +44,7 @@ function CourseItem({ course, number }: { course: Course; number: number }) {
             <span className="course__meta">
               <span>{course.author}</span>
               <span className="course__room led">{course.room}</span>
-              <span className="course__seats">{course.vagas == null ? 'Vagas a confirmar' : course.vagas === 0 ? 'Vagas ocupadas' : `${course.vagas} vagas restantes`}</span>
+              <CourseSeats slug={course.slug} />
             </span>
           </span>
           <CourseArt slug={course.slug} compact />

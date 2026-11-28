@@ -397,7 +397,7 @@ export const COURSES: Course[] = [
     content:
       "1.\tIntrodução ao Notion.\n2.\tConhecendo a interface e os recursos básicos.\n3.\tCriação de páginas e organização de informações.\n4.\tCriação de um sistema de gerenciamento de tarefas.\n5.\tUtilização de filtros e visualizações.\n6.\tProjeto Prático\n",
     author: "Klaywin Ryan Aquino Dias",
-    picture: null,
+    picture: "/participants/klaywin-ryan.png",
     vagas: null,
     period: "manha",
     room: "Sala",
@@ -455,7 +455,7 @@ export const COURSES: Course[] = [
     audience: null,
     content: null,
     author: "Heitor Queiroga Duarte",
-    picture: null,
+    picture: "/participants/heitor-queiroga.png",
     vagas: null,
     period: "tarde",
     room: "Sala",
@@ -471,7 +471,7 @@ export const COURSES: Course[] = [
     content:
       "- Introdução à IA e aos modelos generativos.\n- Chatbots, assistentes e agentes: diferenças e funcionamento.\n- Automação tradicional vs. agentes autônomos.\n- Arquitetura de um agente: modelo, instruções, ferramentas, memória e APIs.\n- Planejamento, tomada de decisão e execução de tarefas.\n- Conhecendo o OpenBot e suas possibilidades.\n- Configuração e criação de agentes inteligentes.\n- Integração com o WhatsApp: APIs, regras e boas práticas.\n- Na prática: agente de captação e qualificação de leads.\n- Segurança, limites de autonomia, supervisão humana e LGPD.",
     author: "Jilcimar da Silva Fernandes",
-    picture: null,
+    picture: "/participants/jilcimar-fernandes.jpg",
     vagas: null,
     period: "tarde",
     room: "Lab 57",

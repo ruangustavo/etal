@@ -312,7 +312,7 @@ export const COURSES: Course[] = [
     content:
       "1. Introdução ao System Design.\n2. Organização de sistemas: monolitos, monolitos modulares e microsserviços.\n3. Comunicação entre sistemas: REST, gRPC, mensageria e eventos.\n4. Distribuição de tráfego: proxies, load balancers, API Gateways e CDN.\n5. Resiliência e tolerância a falhas em sistemas distribuídos.\n6. Gerenciamento de dados: CAP, CQRS, Event Sourcing e sharding.\n7. Transações distribuídas e padrão Saga.\n8. Desafio prático: projetando um sistema para 1 milhão de usuários.",
     author: "João Manoel Fontes",
-    picture: null,
+    picture: "/participants/joao-manoel.jpg",
     vagas: null,
     period: "tarde",
     room: "Lab 60",
@@ -412,7 +412,7 @@ export const COURSES: Course[] = [
     audience: null,
     content: null,
     author: "Pedro Heitor Rêgo Ferreira",
-    picture: null,
+    picture: "/participants/pedro-heitor.jpg",
     vagas: null,
     period: "manha",
     room: "Lab 65",
